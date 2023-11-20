@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.nav{
+    display: flex;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul .link_header{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.button_section{
+    display: flex;
+}
+
+.button_section .cadastro{
+    display: block;
+    background-color: #0096C7;
+    margin-right: 3vw;
+    color: #FFFFFF;
+    width: 8vw;
+    height: 5vh;
+    font-weight: 700;
+    border-style: none;
+}
+
+.button_section .login{
+    display: block;
+    background-color: #FFFFFF;
+    color: #0096C7;
+    width: 5vw;
+    font-weight: 700;
+}
+
