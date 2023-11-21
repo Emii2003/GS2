@@ -1,0 +1,9 @@
+.icons_footer{
+    display: flex;
+}
+
+.icon{
+    width: 3vw;
+    height: 5vh;
+    color: #0096C7;
+}

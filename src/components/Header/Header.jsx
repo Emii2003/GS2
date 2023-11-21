@@ -10,7 +10,7 @@ export default function Header(){
                 <ul className="ul">
                    <Link href={'/'} className="link_header">Home</Link> 
                    <span>/</span>
-                   <Link href={'/'} className="link_header">Contato</Link>
+                   <Link href={'/contato'} className="link_header">Contato</Link>
                 </ul>
             </nav>
             <div className="button_section">
