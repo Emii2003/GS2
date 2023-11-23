@@ -14,6 +14,7 @@ header{
 }
 
 .nav ul .link_header{
+    text-decoration: none;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -23,13 +24,16 @@ header{
 }
 
 .button_section .cadastro{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background-color: #0096C7;
     margin-right: 3vw;
     color: #FFFFFF;
     width: 8vw;
     height: 5vh;
-    font-weight: 700;
+    font-weight: 400;
     border-style: none;
 }
 
