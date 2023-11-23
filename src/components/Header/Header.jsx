@@ -14,8 +14,8 @@ export default function Header(){
                 </ul>
             </nav>
             <div className="button_section">
-                <button className="cadastro">Cadastro</button>
-                <button className="login">Login</button>
+                <Link className="cadastro" href={'./cadastro'}>Cadastro</Link>
+                <Link className="login" href={'./login'}>Login</Link>
             </div>
         </header>
     )
