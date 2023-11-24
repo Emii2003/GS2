@@ -38,10 +38,14 @@ header{
 }
 
 .button_section .login{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
     color: #0096C7;
+    text-decoration: none;
     width: 5vw;
-    font-weight: 700;
+    font-weight: 400;
+    border: 1px solid #0096C7;
 }
 
