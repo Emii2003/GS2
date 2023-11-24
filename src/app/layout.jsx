@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 export default function RootLayout({children, router}) {
   const pathname = usePathname()
 
-  const caminhosPermitidos = ['/cadastro', '/login', '/areaRestrita'];
+  const caminhosPermitidos = ['/cadastro', '/login', '/areaRestrita', '/areaMonitoramento', '/areaMetas'];
 
   if (caminhosPermitidos.includes(pathname)) {
     return (

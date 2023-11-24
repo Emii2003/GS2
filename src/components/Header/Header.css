@@ -19,11 +19,11 @@ header{
     margin-left: 5%;
 }
 
-.button_section{
+ .button_section{
     display: flex;
 }
 
-.button_section .cadastro{
+.button_section .header_cadastro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ header{
     border-style: none;
 }
 
-.button_section .login{
+.button_section .header_login{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import './areaMonitoramento.css';
+import './areaMetas.css';
 
 export default function AreaUsuario(){
     return(
@@ -9,28 +9,22 @@ export default function AreaUsuario(){
             </div>
 
                 <form className='form_area_monitoramento'>
-                        <h1>Monitoramento</h1>
+                        <h1>Metas</h1>
 
                         <div className="form-group">
-                            <label htmlFor="number">Qual a quantidade de consumo diário?</label>
+                            <label htmlFor="number">Qual a quantidade que você pretende consumir em média diária?</label>
                             <input type="number" id="number" name="number" />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="date">Qual data estimada você começou a consumir?</label>
+                            <label htmlFor="date">Qual data de início da meta?</label>
                             <input type="date" id="date" name="date" />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="date">Qual data estimada você consumiu pela ultima vez ou consome?</label>
+                            <label htmlFor="date">Qual data final da meta?</label>
                             <input type="date" id="date" name="date" />
                         </div>
-
-                        <div className="form-group">
-                            <label htmlFor="text">Qual o tipo de substância?</label>
-                            <input type="text" id="date" name="date" />
-                        </div>
-
                         <button type="submit">Enviar</button>
                 </form>
         </div>

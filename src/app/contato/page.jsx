@@ -59,7 +59,7 @@ export default function Contato(){
             <div className='about_me'>
                 <div className="about_me_textbox">
                     <h1 className='about_me_title'>Caio Vitor Urbano Neves</h1>
-                    <p className='about_me_subtitle'>Programadora Python</p>
+                    <p className='about_me_subtitle'>Programador Python</p>
                     <p className='about_me_rm'>RM: 552392 / 1TDSS</p>
                     <FaGithub className="icon_about_me"/>
                     <FaInstagram className="icon_about_me"/>

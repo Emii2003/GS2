@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import { useRouter } from 'next/navigation';
+import Link from "next/link";
+import TextBox from "@/components/TextBoxForm/Textbox";
 import './cadastro.css';
 
 export default function Cadastro(){
@@ -18,9 +19,6 @@ export default function Cadastro(){
             console.log(error)
         })
     },[])
-
-  // const router = useRouter();
-  // const { id } = router.query;
 
   const [novo, setNovo] = useState({
     nome: "",
@@ -58,7 +56,12 @@ export default function Cadastro(){
         
       </div>
       <div className="div_direita">
+      <div className="button_section">
+                <Link className="home_cadastro" href={'/'}>Home</Link>
+                <Link className="login_cadastro" href={'/login'}>Login</Link>
+            </div>
         <form className='form_cadastro' onSubmit={handleSubmit}>
+          <TextBox/>
             <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" name="email" value={novo.email}
@@ -73,7 +76,7 @@ export default function Cadastro(){
 
             <div className="form-group">
                 <label htmlFor="nome">Senha</label>
-                <input type="text" id="senha" name="senha" value={novo.senha}
+                <input type="password" id="senha" name="senha" value={novo.senha}
                  onChange={handleChange}/>
             </div>
 
@@ -83,7 +86,7 @@ export default function Cadastro(){
                  onChange={handleChange}/>
             </div>
 
-          <button type="submit">Enviar</button>
+            <button className= "button_form" type="submit">Enviar</button>
         </form>
       </div>
     </div>
