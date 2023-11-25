@@ -1,21 +1,22 @@
-footer{
+/* Footer.css */
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 3% 15% 2.5% 15%;
     margin-top: 40vh;
-    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Tamanho e opacidade da borda */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-footer .textbox_footer{
+.footer .textboxFooter {
     font-weight: 700;
     color: #0096C7;
 }
 
-footer .icons_footer{
+.footer .iconsFooter {
     display: flex;
 }
 
-footer .icon_footer{
+.footer .iconFooter {
     width: 3vw;
     height: 5vh;
     color: #0096C7;

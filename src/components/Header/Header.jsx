@@ -1,22 +1,31 @@
-import Image from "next/image"
-import Link from "next/link"
-import './Header.css'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from './Header.module.css';
 
-export default function Header(){
-    return(
-        <header>
-            <Image src={"Header/Logo_Temporaria.svg"} width={80} height={100}></Image>
-            <nav className="nav">
-                <ul className="ul">
-                   <Link href={'/'} className="link_header">Home</Link> 
-                   <span>/</span>
-                   <Link href={'/contato'} className="link_header">Contato</Link>
+export default function Header() {
+    return (
+        <header className={styles.header}>
+            <Image src={"/Header/Logo_Temporaria.svg"} width={80} height={100} alt = "Logo do site"/>
+            <nav className={styles.nav}>
+                <ul className={styles.ul}>
+                    <Link href={'/'} className={styles.linkHeader}>
+                        Home
+                    </Link>
+                    <span>/</span>
+                    <Link href={'/equipe'} className={styles.linkHeader}>
+                        Equipe
+                    </Link>
                 </ul>
             </nav>
-            <div className="button_section">
-                <Link className="cadastro" href={'./cadastro'}>Cadastro</Link>
-                <Link className="login" href={'./login'}>Login</Link>
+            <div className={styles.buttonSection}>
+                <Link className={styles.headerCadastro} href={'./cadastro'}>
+                    Cadastro
+                </Link>
+                <Link className={styles.headerLogin} href={'./login'}>
+                    Login
+                </Link>
             </div>
         </header>
-    )
+    );
 }

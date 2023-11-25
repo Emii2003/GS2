@@ -1,0 +1,12 @@
+.background_nav {
+    display: flex;
+    align-items: center;
+    background-color: #023E8A;
+    height: 15vh;
+}
+
+.background_nav p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 2rem;
+}

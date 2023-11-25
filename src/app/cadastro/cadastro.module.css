@@ -1,0 +1,96 @@
+/* Cadastro.module.css */
+
+.cadastroContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.divEsquerda {
+  flex: 1;
+  background-color: #0096C7;
+  color: #fff;
+  width: 50%;
+}
+
+.divEsquerda .textbox {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  font-weight: 800;
+  margin: 30vh 0vh 0vh 20vh;
+}
+
+.divEsquerda .textbox p {
+  font-size: 3rem;
+}
+
+.divDireita {
+  flex: 1;
+  width: 50%;
+  padding: 5%;
+}
+
+.buttonSection .loginCadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #0096C7;
+  color: #FFFFFF;
+  width: 8vw;
+  height: 5vh;
+  font-weight: 400;
+  border-style: none;
+}
+
+.buttonSection .homeCadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  background-color: #FFFFFF;
+  color: #0096C7;
+  text-decoration: none;
+  width: 5vw;
+  font-weight: 400;
+  border: 1px solid #0096C7;
+}
+
+.formCadastro {
+  width: 50%;
+  margin-top: 5vh;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formGroup {
+  margin-bottom: 5%;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 2%;
+}
+
+.buttonForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: vh;
+  text-decoration: none;
+  background-color: #0077B6;
+  color: #FFFFFF;
+  padding: 5%;
+  width: 100%;
+  font-weight: 400;
+  border-style: none;
+}

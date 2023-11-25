@@ -1,0 +1,59 @@
+.form_area_monitoramento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_area_monitoramento h1{
+  color: #001F54;
+  font-weight: 400;
+  text-shadow: 0px 3.169994354248047px 3.169994354248047px rgba(0, 0, 0, 0.25);
+}
+.form-group {
+  width: 25%;
+  margin: 5vh 0vh 0vh 0vh;
+}
+
+label {
+  display: block;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 2%;
+}
+
+.table_content {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table_content th,
+.table_content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table_content th {
+  background-color: #f2f2f2;
+}
+
+.delete-btn {
+  background-color: #ff6961;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d63b3b;
+}
+
+tfoot td {
+  font-weight: bold;
+}

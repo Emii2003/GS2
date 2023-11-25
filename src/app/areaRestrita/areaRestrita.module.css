@@ -1,0 +1,32 @@
+/* areaRestrita.module.css */
+
+.title{
+    margin-top: 5vh;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #e6e6e6;
+    margin: 0 5%;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+
+  
