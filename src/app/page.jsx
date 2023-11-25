@@ -8,7 +8,7 @@ export default function Home() {
             <div className={styles.textbox_home}>
                   <div className={styles.title}>
                       <h1 className={styles.home_title}>Olá, somos</h1>
-                      <h1 className={styles.home_title}>a Rehappy </h1>
+                      <h1 className={styles.home_title}>a Recupere</h1>
                   </div>
 
                   <div className={styles.subtitle}>

@@ -1,0 +1,19 @@
+div nav ul{
+    display: flex;
+    align-items: end;
+    margin: 5vh 5vh;
+}
+
+.link_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+    text-decoration: none;
+    background-color: #023E8A;
+    color: #FFFFFF;
+    padding: 1%;
+    height: 5vh;
+    font-weight: 400;
+     border-style: none;
+}

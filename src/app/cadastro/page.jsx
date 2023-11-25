@@ -41,7 +41,7 @@ export default function Cadastro(){
       },
       body: JSON.stringify(novo)
     }).then(() => {
-      window.location = "/"
+      window.location = "/login"
     });
   };
 

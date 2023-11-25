@@ -1,16 +1,3 @@
-.background_nav{
-    display: flex;
-    align-items: center;
-    background-color: #023E8A;
-    height: 15vh;
-}
-
-.background_nav p{
-    color: #FFF;
-    font-weight: 500;
-    font-size: 2rem;
-}
-
 .form_area_monitoramento {
     display: flex;
     flex-direction: column;
@@ -36,4 +23,37 @@
   input {
     width: 100%;
     padding: 2%;
+  }
+
+  .table_content {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table_content th,
+  .table_content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table_content th {
+    background-color: #f2f2f2;
+  }
+  
+  .delete-btn {
+    background-color: #ff6961;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d63b3b;
+  }
+  
+  tfoot td {
+    font-weight: bold;
   }
