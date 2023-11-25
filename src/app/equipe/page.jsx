@@ -1,4 +1,4 @@
-import './contato.css'
+import './equipe.css'
 import Image from 'next/image'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

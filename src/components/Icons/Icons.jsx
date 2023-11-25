@@ -1,14 +1,15 @@
+import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
-import './Icons.css'
+import styles from './Icons.module.css';
 
-export default function Icons(){
-    return(
-        <div className="icons_footer">
-                <FaGithub className="icon"/>
-                <RiInstagramFill className="icon"/>
-                <FaYoutube className="icon"/>
+export default function Icons() {
+    return (
+        <div className={styles.iconsFooter}>
+            <FaGithub className={styles.icon} />
+            <RiInstagramFill className={styles.icon} />
+            <FaYoutube className={styles.icon} />
         </div>
-    )
+    );
 }

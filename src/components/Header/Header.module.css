@@ -1,29 +1,30 @@
-header{
+/* Header.css */
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
 }
 
-.nav{
+.nav {
     display: flex;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
 }
 
-.nav ul .link_header{
+.nav ul .linkHeader {
     text-decoration: none;
     margin-right: 5%;
     margin-left: 5%;
 }
 
- .button_section{
+.buttonSection {
     display: flex;
 }
 
-.button_section .header_cadastro{
+.buttonSection .headerCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +38,7 @@ header{
     border-style: none;
 }
 
-.button_section .header_login{
+.buttonSection .headerLogin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +49,3 @@ header{
     font-weight: 400;
     border: 1px solid #0096C7;
 }
-
