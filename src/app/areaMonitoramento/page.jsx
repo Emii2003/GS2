@@ -35,7 +35,7 @@ export default function AreaUsuario() {
         qtd_consumo_diario: "",
         tempo_consumo: "Alguns dias",
         id_usuario: id_user ,
-        id_dependencia_quimica: 1,
+        id_dependencia_quimica: "1",
     });
 
     const handleChange = (e) => {
@@ -92,7 +92,7 @@ export default function AreaUsuario() {
             console.log(error)
         })
     }
-    
+
     return (
         <div>
             <HeaderAreaRestrita />

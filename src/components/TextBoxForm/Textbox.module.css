@@ -1,7 +1,6 @@
-  .form_title h1{
+  .formTitle{
     font-size: 1.5rem;
+    line-height: 3rem;
   }
 
-  .form_title{
-    line-height: 2rem;
-  }
+ 

@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
 }
 
-.form_area_monitoramento h1 {
+.form_area_monitoramento h1{
   color: #001F54;
   font-weight: 400;
   text-shadow: 0px 3.169994354248047px 3.169994354248047px rgba(0, 0, 0, 0.25);
 }
-
 .form-group {
   width: 25%;
   margin: 5vh 0vh 0vh 0vh;
@@ -22,8 +20,7 @@ label {
   font-weight: bold;
 }
 
-input,
-select {
+input {
   width: 100%;
   padding: 2%;
 }

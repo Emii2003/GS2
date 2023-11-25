@@ -1,11 +1,11 @@
 "use client"
 
-import './login.css';
+import styles from './login.module.css';
 import { useState, useEffect } from "react";
 import Link from 'next/link';
 import TextBox from '@/components/TextBoxForm/Textbox';
 
-export default function Login(){
+export default function Login() {
   const [usuarios, setUsuarios] = useState([]);
   const [novo, setNovo] = useState({
     nome: "",
@@ -40,9 +40,9 @@ export default function Login(){
       sessionStorage.setItem('id', usuarioExistente.id_usuario);
       sessionStorage.setItem('nome', usuarioExistente.nome);
 
-    //  localStorage.setItem('id_user', usuarioExistente.id_usuario );
-    //  localStorage.setItem('nome', usuarioExistente.nome );
-      window.location.href = "/areaRestrita"; 
+      //  localStorage.setItem('id_user', usuarioExistente.id_usuario );
+      //  localStorage.setItem('nome', usuarioExistente.nome );
+      window.location.href = "/areaRestrita";
     } else {
       // Se o usuário não existe
       alert("Dados inválidos")
@@ -50,52 +50,53 @@ export default function Login(){
   };
 
   return (
-    <div className="login_container">
-    <div className="div_esquerda">
-      <div className='textbox'>
-        <p>Sua</p>
-        <p>Plataforma</p>
-        <p>De saúde</p>
+
+    <div className={styles.loginContainer}>
+      <div className={styles.divEsquerda}>
+        <div className={styles.textbox}>
+          <p>Sua</p>
+          <p>Plataforma</p>
+          <p>De saúde</p>
+        </div>
+      </div>
+      <div className={styles.divDireita}>
+        <div className={styles.buttonSection}>
+          <Link className={styles.homeLogin} href={'/'}>
+            Home
+          </Link>
+          <Link className={styles.cadastroLogin} href={'/cadastro'}>
+            Cadastro
+          </Link>
+        </div>
+        <TextBox/>
+        <form className={styles.formLogin} onSubmit={handleSubmit}>
+          <div className={styles.formGroup}>
+            <label htmlFor="email" className={styles.formLabel}>Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={novo.email}
+              onChange={handleChange}
+              className={styles.formInput}
+            />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor="senha" className={styles.formLabel}>Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              value={novo.senha}
+              onChange={handleChange}
+              className={styles.formInput}
+            />
+          </div>
+
+          <button className={styles.buttonForm} type="submit">Enviar</button>
+        </form>
       </div>
     </div>
-    <div className="div_direita">
-      <div className="button_section">
-        <Link className="home_login" href={'/'}>
-          Home
-        </Link>
-        <Link className="cadastro_login" href={'/cadastro'}>
-          Cadastro
-        </Link>
-      </div>
-      <form className='form_login' onSubmit={handleSubmit}>
-        <TextBox />
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={novo.email}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="senha">Senha</label>
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            value={novo.senha}
-            onChange={handleChange}
-          />
-        </div>
-
-        <button className="button_form" type="submit">
-          Enviar
-        </button>
-      </form>
-    </div>
-  </div>
   );
 };
